@@ -44,19 +44,20 @@ brew "tmux"
 brew "node"
 brew "yarn"
 brew "hugo"
+brew "swiftlint"
 
 cask "visual-studio-code"
 cask "sourcetree"
-cask "docker-toolbox"
 cask "postman"
 EOF
 
 fancy_echo "Installing Ruby gems ..."
 gem_install_or_update "bundler"
 gem_install_or_update "cocoapods"
+gem_install_or_update "specific_install"
+sudo gem specific_install -l https://github.com/ladeiko/Generamba.git
 
 fancy_echo "Installing global JS packages ..."
-yarn global add eslint
-yarn global add surge
+yarn global add eslint surge
 
 update_shell
