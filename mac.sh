@@ -24,7 +24,6 @@ fancy_echo "Updating Homebrew formulae ..."
 brew update --force # https://github.com/Homebrew/brew/issues/1151
 brew bundle --file=- <<EOF
 tap "homebrew/services"
-tap "caskroom/cask"
 
 brew "git"
 brew "vim"
@@ -35,6 +34,7 @@ brew "swiftformat"
 cask "visual-studio-code"
 cask "cocoarestclient"
 cask "fork"
+cask "figma"
 
 cask "chromium"
 EOF

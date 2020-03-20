@@ -4,7 +4,7 @@ A shell script to setup a required minimum of basic tools I use in my daily acti
 
 ## Compatibility
 
-- macOS 10.13.5
+- Tested of macOS 10.15.3
 
 ## Installation
 
