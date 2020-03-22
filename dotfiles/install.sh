@@ -5,7 +5,7 @@ set -o errexit
 
 dir="$( cd "$(dirname "$0")" ; pwd -P )"
 bkp_dir=$dir/dotfiles_bkp
-files="vimrc"
+files=(vimrc zshrc)
 
 echo "Creating backup directory: $bkp_dir ."
 mkdir -p $bkp_dir

@@ -39,6 +39,9 @@ cask "figma"
 cask "chromium"
 EOF
 
+fancy_echo "Installing Oh My ZSH ..."
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
 fancy_echo "Installing Ruby gems ..."
 gem_install_or_update "bundler"
 gem_install_or_update "cocoapods"
