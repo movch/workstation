@@ -39,12 +39,19 @@ cask "figma"
 cask "chromium"
 EOF
 
-fancy_echo "Installing Oh My ZSH ..."
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
 fancy_echo "Installing Ruby gems ..."
 gem_install_or_update "bundler"
 gem_install_or_update "cocoapods"
 gem_install_or_update "fastlane"
 
-source ./dotfiles/install.sh
+fancy_echo "Installing dotfiles ..."
+current_dir=$PWD
+cd ./dotfiles/
+source install.sh
+cd $current_dir
+
+fancy_echo "Installing Oh My ZSH ..."
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" || true
+
+fancy_echo "Installing zsh-autosuggestions plugin ..."
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions

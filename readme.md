@@ -4,10 +4,12 @@ A shell script to setup a required minimum of basic tools I use in my daily acti
 
 ## Compatibility
 
-- Tested of macOS 10.15.3
+- Tested on macOS 10.15.3
 
 ## Installation
 
-Clone repository, run script. You can run script multiple times if needed.
+Clone repository, run script.
 
     bash mac.sh
+
+It is safe to run script multiple times if needed. It may ask for sudo password during the execution (homebrew installation, ruby gems installation, etc.).
