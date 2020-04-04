@@ -31,6 +31,8 @@ brew "vim"
 brew "swiftlint"
 brew "swiftformat"
 
+brew "hugo"
+
 cask "visual-studio-code"
 cask "cocoarestclient"
 cask "fork"
