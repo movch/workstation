@@ -12,4 +12,4 @@ Clone repository, run script.
 
     bash mac.sh
 
-It is safe to run script multiple times if needed. It may ask for sudo password during the execution (homebrew installation, ruby gems installation, etc.).
+It is safe to run script multiple times if needed (the packages will be updated in case they are already installed). It may ask for sudo password during the execution (homebrew installation, ruby gems installation, etc.).

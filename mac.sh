@@ -39,6 +39,7 @@ cask "fork"
 cask "figma"
 
 cask "chromium"
+cask "iina"
 EOF
 
 fancy_echo "Installing Ruby gems ..."
